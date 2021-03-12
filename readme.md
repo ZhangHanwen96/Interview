@@ -1,4 +1,4 @@
-## Summary for interview questions
+# Summary for interview questions
 1. 判断数据类型:typeof, instanceof, Object.prototype.toString(), constructor
 2. [类数组与数组的区别，转换](#2)
 3. [new的原理](#3)
@@ -7,6 +7,12 @@
 6. [new 和 Object.create的区别](#6)
 7. [Js 底层 Array实现机制]: v8 engine < 10 插入，> 10快排
 8. [Dom 常见操作方式](#7)
+9. [模块加载比较ES6 和 CommonJs](#8)
+
+
+## HTTP
+1. [TCP和UCP]()
+2. [cookie 相关首部字段]()
 
 ## 类数组与数组的区别转换
 <span id='2'> </span>
@@ -152,3 +158,11 @@ classList.toggle
 classList.replace
 classList.contains
 ```
+
+### cookie 相关首部字段
+* NAME: 赋予cookie的名称和值
+* domain： 作为cookie适用对象的域名
+* expires：有效期
+* httponly： 加上限制，使cookie不能被script脚本访问，防止跨站脚本攻击
+* secure: 近在https通信才会发送cookie
+* path：限定指定cookie发送范围的文件目录
